@@ -38,10 +38,10 @@ var vm = new Vue({
 })
 ```
 ## vue.js模版语法
-- v-model
-- v-bind
-- v-if
-- v-on
+- v-model:用于在select/input/textarea/radio等表单控件元素上进行双向数据绑定，根据表单上的值自动绑定
+- v-bind：被用于响应的更新html元素
+- v-if：根据表达式的值决定是否发布元素
+- v-on：用户绑定时间处理机制
 - 过滤器：
 ```
 <div id="app">
