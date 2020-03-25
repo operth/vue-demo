@@ -24,4 +24,47 @@ cnpm run dev
 http://localhost:8080
 ```
 ## vue.js起步
-## vue.js语法
+```
+var vm = new Vue({
+  el: '#app',
+  data: {
+    message: 'Tom!'
+  },
+  methods: {
+    reverseMessage: function () {
+      this.message = this.message.split('').reverse().join('')
+    }
+  }
+})
+```
+## vue.js模版语法
+v-model
+v-bind
+v-if
+v-on
+过滤器：
+```
+<div id="app">
+  {{ message | capitalize }}
+</div>
+	
+<script>
+new Vue({
+  el: '#app',
+  data: {
+	message: 'Lucy'
+  },
+  filters: {
+    capitalize: function (value) {
+      if (!value) return ''
+      value = value.toString()
+      return value.charAt(0).toUpperCase() + value.slice(1)
+    }
+  }
+})
+</script>
+```
+缩写形式：
+v-bind:href="url" == :href="url"
+v-on:click="doSomethings" == @click="doSomethings"
+
