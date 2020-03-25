@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>if条件语句判断</title>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <p v-if="seen">你终于出现了</p>
+    <template>
+        <p>哈哈哈，打字辛苦啊！！！</p>
+    </template>
+    <br/><br/>
+    <div v-if="Math.random() > 0.5">
+        Sorry
+    </div>
+    <div v-else>
+        No sorry
+    </div>
+    <div v-if="type == 'A'">
+        A
+    </div>
+    <div v-if="type == 'B'">
+        B
+    </div>
+    <div v-if="type == 'C'">
+        C
+    </div>
+    <div v-show="ok">
+        Hello!
+    </div>
+</div>
+<script>
+var vue = new Vue({
+    el: '#app',
+    data: {
+        seen: true,
+        ok: true,
+        type: 'C'
+    }
+})
+</script>
+</body>
+</html>
