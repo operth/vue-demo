@@ -38,11 +38,11 @@ var vm = new Vue({
 })
 ```
 ## vue.js模版语法
-v-model
-v-bind
-v-if
-v-on
-过滤器：
+- v-model
+- v-bind
+- v-if
+- v-on
+- 过滤器：
 ```
 <div id="app">
   {{ message | capitalize }}
@@ -64,7 +64,7 @@ new Vue({
 })
 </script>
 ```
-缩写形式：
-v-bind:href="url" == :href="url"
-v-on:click="doSomethings" == @click="doSomethings"
+- 缩写形式：
+- v-bind:href="url" == :href="url"
+- v-on:click="doSomethings" == @click="doSomethings"
 
